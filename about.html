@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.5/css/dataTables.dataTables.min.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!---------------------------------------Navbar------------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid">
+            <img src="./images/download__1_-removebg-preview.png" alt="" height="55">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--------------------------------------------------Banner----------------------------------------------->
+    <div class="banner">
+        <img src="./images/pk fest.jpg" alt="">
+    </div>
+    <div class="heading">
+        <h1 class="title">ABOUT US</h1>
+    </div>
+
+    <!-------------------------------------------------About------------------------------------------------->
+    <div class="container">
+        <div class="row">
+            <div class="about-body">
+                <h1 class="sub-title">EID UL FITR</h1><br>
+                <p class="para">Eid-al-Fitr is a direct translation of “Festival of the Breaking of the Fast.”
+                    Eid-al-Fitr is actually a three day long celebration after the end of Ramadan everyday from dawn to
+                    dusk. Determining Eid-al-Fitr all comes down to a moon sighting, just like Ramadan: if the crescent
+                    moon
+                    isn’t seen, Ramadan will go on for another day. If it is seen, Eid Mubarak!</p><br>
+                <h3 class="sub-title">How Does Muslim Celebrate Eid Ul Fitr!!!</h3><br>
+                <p class="para">Muslims wear their newest clothes or their finest clothes. Muslims decorate their homes
+                    with
+                    Eid decorations, lanterns, and twinkling lights. Everyone makes special foods for when their
+                    families
+                    and friends are invited over to come celebrate alongside. Muslims visit their relatives’ homes, as a
+                    way
+                    to celebrate with their loved one.<br>
+                    Hands are covered in henna patterns, from the nights before that were served as preparation for this
+                    three-day long period. Gifts are given to children and those in need, which are commonly known as
+                    Eidi.
+                </p><br>
+                <h3 class="sub-title"> What Is Eidi!!!</h3><br>
+                <p class="para">Eid is still a day of charity. Eidi is referred to as the money and gifts
+                    given to the children of the family by elders: could be relatives, parents, siblings, anyone at all.
+                    Eidi gifts are given as another way of celebrating this joyous day. Children will definitely refer
+                    to
+                    their Eidi as their favorite part of the day!</p>
+            </div>
+            <div class="video">
+                <iframe width="960" height="315" src="https://www.youtube.com/embed/6OF4HEGNBRQ?si=jepHFZtL57smH6Nd"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+        <!-----------------------------------------------Data Table------------------------------------------------>
+<div class="container">
+    <div class="row"> 
+     <div class="table">
+         <div class="datatable m-4">
+             <table id="example" class="display" style="width:100%">
+                 <thead>
+                     <tr>
+                         <th>No.</th>
+                         <th>Festival Name</th>
+                         <th>City</th>
+                         <th>Holiday Start</th>
+                         <th>Holiday End</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td>1</td>
+                         <td>EID UL FITR</td>
+                         <td>Karachi</td>
+                         <td>2024-04-25</td>
+                         <td>2024-04-29</td>
+                     </tr>
+                     <tr>
+                         <td>2</td>
+                         <td>EID AL ADHA</td>
+                         <td>Karachi</td>
+                         <td>2024-05-14</td>
+                         <td>2024-05-17</td>
+             </tr>
+         </div> 
+         </div>
+     </div> 
+ </div>
+ <script src="https://cdn.datatables.net/2.1.5/js/dataTables.min.js"></script>
+
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="about-body">
+            <h1 class="sub-title">EID UL ADHA</h1><br>
+            <p class="para">The twelfth month of the Islamic calendar is called Dhul Hijjah. It is the month that
+                contains one of the greatest pillars of Islam – Hajj or the major pilgrimage. It also contains one of
+                only two Islamic reoccurring festivals, Eid ul Adha. These two special occasions, the Hajj and Eid ul
+                Adha.<br>
+                Eid ul Adha commemorates a specific trial in the life of Ibrahim. He was commanded by God to sacrifice,
+                his son Ishmael. Eid ul Adha occurs on the 10th day of Dhul Hijjah, the day on which most of the Hajj
+                rites have been preformed and the pilgrims slaughter an animal to honour Prophet Ibrahim’s obedience to
+                God.<br>
+                In a divinely inspired dream, Ibrahim saw himself sacrificing his son Ishmael. All members of Ibrahim’s
+                family demonstrated complete trust in God, therefore Ibrahim revealed the dream to Ishmael. He readily
+                agreed that his father must carry out the command of God. Together they went to the place of sacrifice
+                and offered Ishmael’s life to God. Ibrahim prepared to sacrifice his beloved son. At this point the
+                shaytaan (satan) tempted Ibrahim trying to make him disobey God, but Ibrahim resisted and drove the
+                shaytaan away. Ibrahim looked down at his son for what he believed was the last time but as the blade
+                came close to Ishmael’s neck God stayed his hand and revealed that there was no need for Ibrahim to
+                continue. His sacrifice had already been fulfilled.<br>
+
+                Giving up something big for the sake of God, such as the life of your child, must seem like a huge and
+                unimaginable sacrifice. Today even going without something small, such as a cup of coffee, to donate the
+                money to charity seems like a large sacrifice. Try to imagine how Ibrahim must have felt as he held the
+                blade above his child’s neck. In the last moment he was relieved of his duty to follow God’s commands.
+                Having complete trust in God, knowing with certainty that God knows and wants what is best for us is
+                often difficult, but it should not be.<br>
+
+                “…And whosoever fears God and keeps his duty to Him, He will make a way for him to get out (from every
+                difficulty). And He will provide him from (sources) he never could imagine….” (Quran 65:2-3)<br>
+
+                God replaced Ishmael with a sheep and it is for this reason that Muslims sacrifice an animal on the
+                celebration of Eid ul Adha; however it is more than a celebration, it is a reminder. We are reminded of
+                our own submission to the will of God. Those Muslim’s who are not making the pilgrimage and who can
+                afford it sacrifice an animal in remembrance of Prophet Ibrahim’s test.<br>
+
+                “Their meat will not reach Allah, nor will their blood, but what reaches Him is piety from you….”
+                (Quran 22:37)<br>
+
+                The act of animal sacrifice is often misunderstood. God has no need for the blood or the meat; in fact
+                God has no need for any of our acts of worship. However for our own benefit God commands us to turn to
+                Him and obey Him. God looks for our piety, our goodness and our charity. The animal sacrificed is
+                usually a sheep, a goat or a cow.<br>
+
+                Distributing the meat from the sacrifice of Eid al-Adha strengthens many of our efforts to please God
+                with our piety. Usually, a portion is eaten by the immediate family and relatives, a portion is given
+                away to friends and neighbours and a portion is donated to the poor. The act symbolizes our willingness
+                to give up our bounties to strengthen ties of kinship and friendship and our enthusiasm to give up
+                things that are of benefit to us in order to help those who are in need. In the sacrifice we recognize
+                that all blessings come from God.<br>
+
+                Eid ul Adha commences on the 10th day of Dhul Hijjah. For those who are not at the pilgrimage, it begins
+                with an extra early morning prayer performed in congregation, called the Eid prayer. It is a time of
+                celebration, a time to visit family and friends and thank God for all the blessings He has bestowed upon
+                us. It demands contact with relatives, kindness to family and neighbours, and empathy and compassion for
+                the poor. Above all Eid ul Adha reminds us that God is great and that He is the source of all bounties.
+                Through the good times and the trying times God is the source of all comfort and all peace, and
+                submission to Him brings the greatest benefits of all.</p><br>
+            </div>
+            <div class="video">
+                <iframe width="960" height="315" src="https://www.youtube.com/embed/Dn3ym1inZes?si=8lIu46uuPijRPa2Z"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------------------Footer---------------------------------------------------->
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgb(207, 6, 6, 0.651); color: whitesmoke;">
+            © 2020 Copyright:
+            <a class="text-body" href="https://pak-tours.com/pakistan-festivals/">Pakistan-festivals.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    
+</body>
+
+</html>
