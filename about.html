@@ -1,214 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.5/css/dataTables.dataTables.min.css">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+<script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/2.1.5/css/dataTables.dataTables.css" />
+  
+<script src="https://cdn.datatables.net/2.1.5/js/dataTables.js"></script>
+<link rel="stylesheet" href="/DataTables/datatables.css" />
+ 
+<script src="/DataTables/datatables.js"></script>
+  <title>Document</title>
 </head>
-
 <body>
-    <!---------------------------------------Navbar------------------------------------------------->
-    <nav class="navbar navbar-expand-lg bg-danger">
-        <div class="container-fluid">
-            <img src="./images/download__1_-removebg-preview.png" alt="" height="55">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Brand</a>
 
-    <!--------------------------------------------------Banner----------------------------------------------->
-    <div class="banner">
-        <img src="./images/pk fest.jpg" alt="">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./ABOUT.html">About</a>
+        </li>
+     
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+       
+      </ul>
+      <!-- Left links -->
     </div>
-    <div class="heading">
-        <h1 class="title">ABOUT US</h1>
-    </div>
-
-    <!-------------------------------------------------About------------------------------------------------->
-    <div class="container">
-        <div class="row">
-            <div class="about-body">
-                <h1 class="sub-title">EID UL FITR</h1><br>
-                <p class="para">Eid-al-Fitr is a direct translation of “Festival of the Breaking of the Fast.”
-                    Eid-al-Fitr is actually a three day long celebration after the end of Ramadan everyday from dawn to
-                    dusk. Determining Eid-al-Fitr all comes down to a moon sighting, just like Ramadan: if the crescent
-                    moon
-                    isn’t seen, Ramadan will go on for another day. If it is seen, Eid Mubarak!</p><br>
-                <h3 class="sub-title">How Does Muslim Celebrate Eid Ul Fitr!!!</h3><br>
-                <p class="para">Muslims wear their newest clothes or their finest clothes. Muslims decorate their homes
-                    with
-                    Eid decorations, lanterns, and twinkling lights. Everyone makes special foods for when their
-                    families
-                    and friends are invited over to come celebrate alongside. Muslims visit their relatives’ homes, as a
-                    way
-                    to celebrate with their loved one.<br>
-                    Hands are covered in henna patterns, from the nights before that were served as preparation for this
-                    three-day long period. Gifts are given to children and those in need, which are commonly known as
-                    Eidi.
-                </p><br>
-                <h3 class="sub-title"> What Is Eidi!!!</h3><br>
-                <p class="para">Eid is still a day of charity. Eidi is referred to as the money and gifts
-                    given to the children of the family by elders: could be relatives, parents, siblings, anyone at all.
-                    Eidi gifts are given as another way of celebrating this joyous day. Children will definitely refer
-                    to
-                    their Eidi as their favorite part of the day!</p>
-            </div>
-            <div class="video">
-                <iframe width="960" height="315" src="https://www.youtube.com/embed/6OF4HEGNBRQ?si=jepHFZtL57smH6Nd"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-
-        <!-----------------------------------------------Data Table------------------------------------------------>
-<div class="container">
-    <div class="row"> 
-     <div class="table">
-         <div class="datatable m-4">
-             <table id="example" class="display" style="width:100%">
-                 <thead>
-                     <tr>
-                         <th>No.</th>
-                         <th>Festival Name</th>
-                         <th>City</th>
-                         <th>Holiday Start</th>
-                         <th>Holiday End</th>
-                     </tr>
-                 </thead>
-                 <tbody>
-                     <tr>
-                         <td>1</td>
-                         <td>EID UL FITR</td>
-                         <td>Karachi</td>
-                         <td>2024-04-25</td>
-                         <td>2024-04-29</td>
-                     </tr>
-                     <tr>
-                         <td>2</td>
-                         <td>EID AL ADHA</td>
-                         <td>Karachi</td>
-                         <td>2024-05-14</td>
-                         <td>2024-05-17</td>
-             </tr>
-         </div> 
-         </div>
-     </div> 
- </div>
- <script src="https://cdn.datatables.net/2.1.5/js/dataTables.min.js"></script>
-
-
-    <div class="container">
-        <div class="row mt-4">
-            <div class="about-body">
-            <h1 class="sub-title">EID UL ADHA</h1><br>
-            <p class="para">The twelfth month of the Islamic calendar is called Dhul Hijjah. It is the month that
-                contains one of the greatest pillars of Islam – Hajj or the major pilgrimage. It also contains one of
-                only two Islamic reoccurring festivals, Eid ul Adha. These two special occasions, the Hajj and Eid ul
-                Adha.<br>
-                Eid ul Adha commemorates a specific trial in the life of Ibrahim. He was commanded by God to sacrifice,
-                his son Ishmael. Eid ul Adha occurs on the 10th day of Dhul Hijjah, the day on which most of the Hajj
-                rites have been preformed and the pilgrims slaughter an animal to honour Prophet Ibrahim’s obedience to
-                God.<br>
-                In a divinely inspired dream, Ibrahim saw himself sacrificing his son Ishmael. All members of Ibrahim’s
-                family demonstrated complete trust in God, therefore Ibrahim revealed the dream to Ishmael. He readily
-                agreed that his father must carry out the command of God. Together they went to the place of sacrifice
-                and offered Ishmael’s life to God. Ibrahim prepared to sacrifice his beloved son. At this point the
-                shaytaan (satan) tempted Ibrahim trying to make him disobey God, but Ibrahim resisted and drove the
-                shaytaan away. Ibrahim looked down at his son for what he believed was the last time but as the blade
-                came close to Ishmael’s neck God stayed his hand and revealed that there was no need for Ibrahim to
-                continue. His sacrifice had already been fulfilled.<br>
-
-                Giving up something big for the sake of God, such as the life of your child, must seem like a huge and
-                unimaginable sacrifice. Today even going without something small, such as a cup of coffee, to donate the
-                money to charity seems like a large sacrifice. Try to imagine how Ibrahim must have felt as he held the
-                blade above his child’s neck. In the last moment he was relieved of his duty to follow God’s commands.
-                Having complete trust in God, knowing with certainty that God knows and wants what is best for us is
-                often difficult, but it should not be.<br>
-
-                “…And whosoever fears God and keeps his duty to Him, He will make a way for him to get out (from every
-                difficulty). And He will provide him from (sources) he never could imagine….” (Quran 65:2-3)<br>
-
-                God replaced Ishmael with a sheep and it is for this reason that Muslims sacrifice an animal on the
-                celebration of Eid ul Adha; however it is more than a celebration, it is a reminder. We are reminded of
-                our own submission to the will of God. Those Muslim’s who are not making the pilgrimage and who can
-                afford it sacrifice an animal in remembrance of Prophet Ibrahim’s test.<br>
-
-                “Their meat will not reach Allah, nor will their blood, but what reaches Him is piety from you….”
-                (Quran 22:37)<br>
-
-                The act of animal sacrifice is often misunderstood. God has no need for the blood or the meat; in fact
-                God has no need for any of our acts of worship. However for our own benefit God commands us to turn to
-                Him and obey Him. God looks for our piety, our goodness and our charity. The animal sacrificed is
-                usually a sheep, a goat or a cow.<br>
-
-                Distributing the meat from the sacrifice of Eid al-Adha strengthens many of our efforts to please God
-                with our piety. Usually, a portion is eaten by the immediate family and relatives, a portion is given
-                away to friends and neighbours and a portion is donated to the poor. The act symbolizes our willingness
-                to give up our bounties to strengthen ties of kinship and friendship and our enthusiasm to give up
-                things that are of benefit to us in order to help those who are in need. In the sacrifice we recognize
-                that all blessings come from God.<br>
-
-                Eid ul Adha commences on the 10th day of Dhul Hijjah. For those who are not at the pilgrimage, it begins
-                with an extra early morning prayer performed in congregation, called the Eid prayer. It is a time of
-                celebration, a time to visit family and friends and thank God for all the blessings He has bestowed upon
-                us. It demands contact with relatives, kindness to family and neighbours, and empathy and compassion for
-                the poor. Above all Eid ul Adha reminds us that God is great and that He is the source of all bounties.
-                Through the good times and the trying times God is the source of all comfort and all peace, and
-                submission to Him brings the greatest benefits of all.</p><br>
-            </div>
-            <div class="video">
-                <iframe width="960" height="315" src="https://www.youtube.com/embed/Dn3ym1inZes?si=8lIu46uuPijRPa2Z"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-
-    <!-----------------------------------------------Footer---------------------------------------------------->
-    <footer class="bg-body-tertiary text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgb(207, 6, 6, 0.651); color: whitesmoke;">
-            © 2020 Copyright:
-            <a class="text-body" href="https://pak-tours.com/pakistan-festivals/">Pakistan-festivals.com</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-
-
-    <!-- MDB -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/jquery.js"></script>
-    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+          
+<P style="font-size: 18px; font-weight:bold; text-align:center;">There are two official holidays that are celebrated in Islam. One is Eid al-Fitr, which celebrates the breaking of the fast at the end of Ramadan. The other is Eid al-Adha. In this article, we’ll explain everything you need to know about Eid al-Adha, including what it is, how it’s celebrated, and more.</P>
+<div>
+<h2 style=margin-left:20px;color:darkslateblue;>EID-AL-FITR</h2>
+<P style="line-height: 26px;">
+ 
+    Eid al-Fitr is an Islamic festival that marks the end of Ramadan, the holy month of fasting when Muslims fast from dawn to dusk each day. It is the first time Muslims can eat during daylight hours after fasting during Ramadan. The translation of “Eid al-Fitr” from Arabic sums up the holiday as it means “festival of breaking the fast.”
     
-</body>
+    Eid al-Fitr is celebrated during the first three days of Shawwal, which is the tenth month in the Muslim (lunar) calendar. This means that the timing of Eid al-Fitr (and Ramadan) is different every year as it is based on the lunar cycle. It does not begin until the new moon is seen, which means it starts at different times for different Muslims around the world. However, some Muslims choose to celebrate Eid al-Fitr when the new moon first appears over Mecca instead of their own locations.
+    
+    Muslims around the world perform communal prayer at daybreak on the first day of Eid al-Fitr, after cleansing themselves and donning new clothes. They then continue to celebrate for three days. A common greeting during Eid al-Fitr is “Eid Mubarak,” which means “Blessed Eid.” This greeting is used to wish other Muslims well during Eid. 
+    
+    These celebrations during Eid al-Fitr vary from country to country but include visiting family and friends, giving presents, enjoying feasts, wearing new clothes, and visiting the graves of relatives. Through these celebrations, Muslims show their gratitude to Allah after reflecting and fasting during Ramadan. 
+    
+    This holiday is also a reminder for Muslims to be grateful for what they have as well as to help the less fortunate. This is known as zakat, which is one of the five pillars of Islam. Zakat is a requirement that all Muslims with the means to do so donate to the less fortunate. Zakat significantly increases during Ramadan and continues as an important part of Eid al-Fitr.
+    Eid al-Fitr, first of two canonical festivals of Islam. Eid al-Fitr marks the end of Ramadan, the Muslim holy month of fasting, and is celebrated during the first three days of Shawwāl, the 10th month of the Islamic calendar (though the Muslim use of a lunar calendar means that it may fall in any season of the year). As in Islam’s other holy festival, Eid al-Adha, it is distinguished by the performance of communal prayer (ṣalāt) at daybreak on its first day. Eid al-Fitr is a time of official receptions and private visits, when friends greet one another, presents are given, new clothes are worn, and the graves of relatives are visited.</P>
 
+</div>
+<div></div>
+<h2 style=margin-left:16px;color:darkslateblue;>EID-UL-ADHA</h2>
+<p style="line-height: 26px;"> 
+<h6 style="font-size: 20px;">What Is Eid al-Adha?</h6> 
+The Eid al-Adha holiday—often referred to as “Big Eid” or “the Greater Eid”—is an Islamic holiday that honors Ibrahim’s (Abraham) devotion and obedience to Allah. The holiday specifically commemorates Ibrahim’s willingness to sacrifice his son Ismail (Ishmael) when Allah commanded him to. However, before Ibrahim could do so, Allah provided him with a ram to sacrifice in Ismail’s place. In Arabic, “Eid al-Adha” translates to “Festival of Sacrifice.”
+<br>
+ 
+
+<h6 style="font-size: 20px;"> When Is Eid Ul-Adha?</h6>
+The date of Eid al-Adha is determined by the Islamic lunar calendar, so it varies each year. However, Eid al-Adha falls on the 10th day of Dhu al-Hijjah—the last month of the Islamic calendar—and lasts for four days. It can be difficult to know exactly when Eid will be, as the dates shift about 11 days earlier each year in the international (Gregorian) calendar. In 2022, the approximate start of Eid al-Adha will be celebrated between sundown on Saturday, July 9th, and sundown on Sunday, July 10th, and will last several days after.
+
+ 
+
+<h6  style="font-size: 20px;">  How Is Eid Ul-Adha Celebrated?</h6>
+Eid ul-Adha observances and celebrations include going to a mosque to pray any time between when the sun completely rises to just before the entering of Zuhr time—known as the noon prayer—on the 10th of Dhu al-Hijjah.
+
+ 
+
+For many Muslims, Eid Ul-Adha marks the culmination of Hajj (pilgrimage)—which is the Fifth Pillar of Islam—rites at Minā, Saudi Arabia, near Mecca. This annual pilgrimage is taken by men and women who are financially and physically able to take it once in their lifetime, and the end of the pilgrimage coincides with the end of Eid al-Adha.
+
+ 
+
+Another part of Eid Ul-Adha is food. As another way of commemorating Ibrahim’s willingness to sacrifice Ismail, families will sacrifice a ritually acceptable animal, like a cow, goat, sheep, or camel. The family then consumes a portion of the meat from the slaughtered animal, giving the rest to the poor and needy, demonstrating another Pillar of Islam—zakat.
+
+ 
+Similar to Eid Ul-Fitr, Eid al-Adha is a time when Muslims wear new clothes, exchange gifts, and enjoy feasts with family and friends. Muslims also wish one another a happy Eid al-Adha with greetings. One common phrase that is used during both Eid al-Adha and Eid al-Fitr is “Eid Mubarak,” which means “Blessed Eid.” You may also hear a variation of the phrase, “Eid al-Adha Mubarak.” By saying this, Muslims are wishing one another good fortune and well-being.
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
 </html>
