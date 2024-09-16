@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivals Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <style>
+        body {
+            background-color: #000000;
+            color: #fff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .navbar {
+            background-color: #171109;
+            padding: 15px 10px; /* Adjust padding to control navbar height */
+        }
+
+        .navbar-brand img {
+            height: 85px; /* Adjust height as needed */
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .carousel-item {
+            height: 500px;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+
+        .carousel-caption {
+            color: WHITE;
+        }
+
+        .carousel-indicators [data-bs-target] {
+            background-color: #ffc107;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #000;
+        }
+
+        .welcome-text {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+        }
+
+        .welcome-text h1 {
+            color: #ffc107;
+            font-size: 3rem;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .welcome-text p {
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        
+       
+
+        .container {
+            padding: 20px;
+        }
+
+        .heading-center {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #fff;
+        }
+
+        .black-golden-theme p,
+        .black-golden-theme ul {
+            margin: 0 0 20px;
+        }
+
+        .black-golden-theme ul {
+            padding-left: 20px;
+        }
+
+        .black-golden-theme li {
+            margin-bottom: 10px;
+        }
+
+        .black-golden-theme strong {
+            color: gold;
+        }
+
+        .black-golden-theme a {
+            color: gold;
+            text-decoration: none;
+        }
+
+        .black-golden-theme a:hover {
+            text-decoration: underline;
+        }
+
+        .heading-center {
+            text-align: center;
+            color: #ffc107;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 40px 0;
+        }
+
+        .heading-center h1, .heading-center h2 {
+            font-size: 3rem;
+        }
+
+
+        .transparent-footer {
+            background: #171109;
+            color: #ffffff;
+        }
+
+        .transparent-footer h5 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .transparent-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .transparent-footer a:hover {
+            text-decoration: underline;
+        }
+
+       /* DataTable Custom Styles */
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./pakf.PNG" alt="Logo" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4">About Us</h1>
+        <div class="row">
+            <!-- Eid-ul-Fitr -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="pexels-photo-7249348.jpeg" class="card-img-top" alt="Eid-ul-Fitr">
+                    <div class="card-body">
+                        <h5 class="card-title">Eid-ul-Fitr</h5>
+                        <p class="card-text">Eid-ul-Fitr marks the end of Ramadan, a month of fasting. It is a day of celebration, prayers, and feasting with family and friends. Special dishes are prepared, and people often exchange gifts and charity.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Eid-ul-Azha -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="pexels-photo-938910.jpeg" class="card-img-top" alt="Eid-ul-Azha">
+                    <div class="card-body">
+                        <h5 class="card-title">Eid-ul-Azha</h5>
+                        <p class="card-text">Eid-ul-Azha commemorates the willingness of Ibrahim (Abraham) to sacrifice his son as an act of obedience to God. This festival involves the sacrifice of animals, and the meat is distributed among family, friends, and those in need.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Eid Milad-un-Nabi -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="pexels-photo-7249245.webp" class="card-img-top" alt="Eid Milad-un-Nabi">
+                    <div class="card-body">
+                        <h5 class="card-title">Eid Milad-un-Nabi</h5>
+                        <p class="card-text">Eid Milad-un-Nabi celebrates the birth of Prophet Muhammad. It is observed with special prayers, gatherings, and processions. Devotees express their love for the Prophet through hymns and recitations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            body {
+                background-color: #000;
+                color: #000;
+            }
+            .container {
+                background-color: #000;
+                padding: 20px;
+                border-radius: 8px;
+            }
+            .table {
+                background-color: #fff;
+                color: #fff;
+            }
+            .table thead th {
+                background-color:#000;
+                color: #fff;
+            }
+            .table tbody tr {
+                background-color: #fff;
+            }
+            .table tbody tr:nth-child(even) {
+                background-color: #000
+            }
+            .table tbody td {
+                color: #000;
+            }
+            .table-bordered thead th, .table-bordered tbody td {
+                border-color: #000;
+            }
+            .dataTables_wrapper .dataTables_paginate .paginate_button {
+                color: #fff;
+                border-color: #000;
+            }
+            .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+                background-color: #000;
+                border-color: #000;
+            }
+        </style>
+
+        <!-- Data Table -->
+        <div class="my-5">
+            <h2 class="text-center mb-4">Festival Data Table</h2>
+            <table id="festivalTable" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Festival</th>
+                        <th>Date</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Eid-ul-Fitr</td>
+                        <td>Varies (End of Ramadan)</td>
+                        <td>Celebration marking the end of Ramadan with prayers and feasting.</td>
+                    </tr>
+                    <tr>
+                        <td>Eid-ul-Azha</td>
+                        <td>Varies (10th of Dhu al-Hijjah)</td>
+                        <td>Commemoration of Ibrahim's sacrifice with animal sacrifice.</td>
+                    </tr>
+                    <tr>
+                        <td>Eid Milad-un-Nabi</td>
+                        <td>Varies (12th of Rabi' al-Awwal)</td>
+                        <td>Celebration of the birth of Prophet Muhammad with prayers and gatherings.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Initialize DataTable -->
+    <script>
+        $(document).ready(function() {
+            $('#festivalTable').DataTable();
+        });
+    </script>
+
+ <!-- Transparent Footer Section -->
+ <footer class="transparent-footer text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>About Us</h5>
+                <p>We are dedicated to give you information about the Pakistani Festivals and work together to network and grow.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="./HOME.HTML" class="text-white">Home</a></li>
+                    <li><a href="./ABOUT.HTML" class="text-white">About Us</a></li>
+                   
+                    <li><a href="./CONTACT.HTML" class="text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Contact Us</h5>
+                <p>Email: <a href="mailto:info@PAKISTANIFESTIVES.com" class="text-white">info@PAKISTANIFESTIVES.com</a></p>
+                <p>Phone: <a href="tel:+1234567890" class="text-white">+123 456 7890</a></p>
+            </div>
+            <div class="col-md-3">
+              <h5>Follow Us</h5>
+              <a href="https://www.facebook.com/" class="btn btn-outline-primary btn-sm">Facebook</a>
+              <a href="https://www.instagram.com/" class="btn btn-outline-info btn-sm">Instagram</a>
+              <a href="https://www.youtube.com/c/YourChannel" class="btn btn-outline-danger btn-sm">Youtube</a>
+          </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col text-center">
+                <p class="mt-3 mb-0">© 2024 PAKISTANI FESTIVES. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
